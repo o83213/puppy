@@ -1,12 +1,17 @@
 package puppy
 
-import "fmt"
+import (
+	"github.com/o83213/dog"
+)
 
-func Bark() {
-	fmt.Println("Bark!")
+func Bark() string {
+	return "Woof!"
 }
 
+func Barks() string {
+	return "Woof! Woof! Woof!"
+}
 
-func Barks() {
-	fmt.Println("Bark! Bark! Bark!")
+func BigBark() string {
+	return dog.WhenGrownUp(Bark())
 }
